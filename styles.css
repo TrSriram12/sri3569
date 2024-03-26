@@ -1,0 +1,104 @@
+{
+    background-image: url(./IMG_1307.JPG);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Add this line */
+}
+
+h1 {
+    color: #070574;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.heartButton {
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.heartButton:hover {
+    transform: scale(1.1);
+}
+
+#birthdayWishes {
+    margin-top: 30px;
+}
+
+#emojis {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.emoji {
+    position: absolute;
+    top: 10px;
+    display: block;
+    font-size: 30px;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+#restartButton {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom */
+    right: 20px;
+}
+body {
+    background-image: url(./IMG_1307.JPG);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #070574;
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.heartButton {
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.heartButton:hover {
+    transform: scale(1.1);
+}
+/* For image page */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    width: calc(50% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    border-radius: 10px;
+}
